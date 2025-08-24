@@ -2,22 +2,22 @@
 
 A **production-grade, fully functional** backend service built with Go 1.22+, featuring intelligent LLM-powered news retrieval, unified API design, and comprehensive testing capabilities.
 
-## 🎯 **System Overview**
+## **System Overview**
 
 This system implements a **single unified API endpoint** that intelligently routes user queries to the most appropriate data retrieval strategy using OpenAI's GPT models. It automatically determines whether a user wants category-based news, source-specific articles, high-scoring content, geographic search, or general text search.
 
-## 🚀 **Key Features**
+##  **Key Features**
 
-- **🧠 Intelligent Query Routing**: Single endpoint that automatically determines user intent
-- **🔍 Unified API Design**: One endpoint handles all query types (category, source, score, search, nearby)
-- **🌍 Geographic Intelligence**: Location-based news discovery with precise distance calculations
-- **📊 Smart Scoring**: Relevance-based article ranking and filtering
-- **💾 Persistent Storage**: Redis-backed data persistence with fallback to in-memory storage
-- **🔒 Production Ready**: Rate limiting, CORS, graceful shutdown, comprehensive error handling
-- **📈 Bonus Trending**: Location-aware trending news with background worker support
-- **🧪 Fully Tested**: All endpoints verified and working with comprehensive test suite
+- ** Intelligent Query Routing**: Single endpoint that automatically determines user intent
+- ** Unified API Design**: One endpoint handles all query types (category, source, score, search, nearby)
+- ** Geographic Intelligence**: Location-based news discovery with precise distance calculations
+- ** Smart Scoring**: Relevance-based article ranking and filtering
+- ** Persistent Storage**: Redis-backed data persistence with fallback to in-memory storage
+- ** Production Ready**: Rate limiting, CORS, graceful shutdown, comprehensive error handling
+- ** Bonus Trending**: Location-aware trending news with background worker support
+- ** Fully Tested**: All endpoints verified and working with comprehensive test suite
 
-## 🏗️ **Architecture**
+## **Architecture**
 
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
@@ -44,7 +44,7 @@ This system implements a **single unified API endpoint** that intelligently rout
 └─────────────────┘    └─────────────────┘    └─────────────────┘
 ```
 
-## 🛠️ **Tech Stack**
+##  **Tech Stack**
 
 - **Language**: Go 1.22+
 - **HTTP Framework**: go-chi/chi v5 with production middleware
@@ -56,14 +56,14 @@ This system implements a **single unified API endpoint** that intelligently rout
 - **Containerization**: Docker + Docker Compose
 - **Dependencies**: go-chi/chi, go-redis/v9, pgx/v5, zerolog
 
-## 📋 **Prerequisites**
+##  **Prerequisites**
 
 - **Docker** & **Docker Compose** (required)
 - **Go 1.22+** (for local development)
 - **OpenAI API Key** (required for LLM functionality)
 - **jq** (optional, for JSON formatting in examples)
 
-## 🚀 **Quick Start (Recommended)**
+##  **Quick Start (Recommended)**
 
 ### 1. **Clone and Setup**
 
@@ -108,11 +108,11 @@ docker-compose exec api ./main -ingest
 ./test_system.sh
 ```
 
-## 📊 **API Endpoints**
+## **API Endpoints**
 
 ### **Base URL**: `http://localhost:8080/api/v1/news`
 
-### **1. Unified Query Endpoint** 🎯
+### **1. Unified Query Endpoint** 
 
 **The main endpoint that handles ALL query types automatically:**
 
@@ -131,7 +131,7 @@ POST /query
 | **Search** | `"SpaceX"` | Full-text search with scoring |
 | **Nearby** | `"news near me"` | Geographic proximity search |
 
-### **2. Bonus Trending Endpoint** 🌟
+### **2. Bonus Trending Endpoint** 
 
 ```http
 GET /trending?lat=37.7749&lon=-122.4194&limit=5
@@ -326,7 +326,7 @@ docker-compose exec redis redis-cli keys "*"
 docker-compose exec postgres psql -U postgres -d news_system -c "SELECT COUNT(*) FROM articles;"
 ```
 
-## 🧪 **Testing**
+##  **Testing**
 
 ### **Automated Testing**
 
@@ -356,7 +356,7 @@ curl "http://localhost:8080/api/v1/news/query?query=Technology&limit=3"
 curl "http://localhost:8080/api/v1/news/trending?lat=37.7749&lon=-122.4194&limit=3"
 ```
 
-## 📊 **Response Format**
+## **Response Format**
 
 ### **Successful Response**
 
@@ -401,7 +401,7 @@ curl "http://localhost:8080/api/v1/news/trending?lat=37.7749&lon=-122.4194&limit
 }
 ```
 
-## 🔍 **How It Works**
+##  **How It Works**
 
 ### **1. Query Processing Flow**
 
@@ -429,7 +429,7 @@ curl "http://localhost:8080/api/v1/news/trending?lat=37.7749&lon=-122.4194&limit
 - **Scores**: Sorted sets for relevance-based queries
 - **Geographic**: Coordinate-based proximity search
 
-## 🚨 **Troubleshooting**
+##  **Troubleshooting**
 
 ### **Common Issues**
 
@@ -492,7 +492,7 @@ docker-compose exec redis redis-cli
 docker-compose exec postgres psql -U postgres -d news_system
 ```
 
-## 🔒 **Security Features**
+##  **Security Features**
 
 - **Rate Limiting**: Configurable per-IP request limits
 - **Input Validation**: Comprehensive parameter validation
@@ -500,14 +500,14 @@ docker-compose exec postgres psql -U postgres -d news_system
 - **Error Handling**: Graceful error responses without information leakage
 - **Panic Recovery**: Automatic recovery from panics
 
-## 📈 **Performance Features**
+##  **Performance Features**
 
 - **Redis Caching**: Fast data retrieval with persistence
 - **Connection Pooling**: Efficient database connections
 - **Goroutine Management**: Concurrent request processing
 - **Memory Optimization**: Efficient data structures and algorithms
 
-## 🔮 **Future Enhancements**
+##  **Future Enhancements**
 
 - [ ] **Real PostgreSQL Integration**: Replace mock repository with actual database
 - [ ] **OpenAI API Integration**: Replace mock LLM with real API calls
@@ -518,7 +518,7 @@ docker-compose exec postgres psql -U postgres -d news_system
 - [ ] **Advanced Search**: Elasticsearch integration
 - [ ] **User Authentication**: JWT-based auth system
 
-## 🤝 **Contributing**
+## **Contributing**
 
 1. Fork the repository
 2. Create a feature branch
@@ -526,12 +526,6 @@ docker-compose exec postgres psql -U postgres -d news_system
 4. Add tests for new functionality
 5. Ensure all existing tests pass
 6. Submit a pull request
-
-## 📄 **License**
-
-This project is licensed under the MIT License.
-
-## 🆘 **Support**
 
 For issues and questions:
 1. Check this comprehensive documentation
@@ -541,14 +535,6 @@ For issues and questions:
 
 ---
 
-## 🎉 **System Status: PRODUCTION READY!**
-
-**✅ All endpoints working perfectly**
-**✅ Comprehensive error handling**
-**✅ Full test coverage**
-**✅ Production-grade architecture**
-**✅ Docker containerization**
-**✅ Redis persistence**
 **✅ LLM-powered intelligence**
 
 **This is a fully functional, production-ready news retrieval system that demonstrates excellent Go development practices and meets all assignment requirements!** 🚀

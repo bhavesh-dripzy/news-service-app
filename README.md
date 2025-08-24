@@ -1,0 +1,1 @@
+Open News-service folder

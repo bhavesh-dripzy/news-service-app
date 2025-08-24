@@ -1,0 +1,63 @@
+[
+  {
+    "id": "b1793e11-85f1-47f4-b836-ddc21dd8991e",
+    "title": "Paris police chase over running of red light ends in pileup | DW News",
+    "description": "Paris police chase over running of red light ends in pileup | DW News...",
+    "url": "https://www.youtube.com/@dwnews",
+    "publication_date": "2025-03-24T11:08:11Z",
+    "source_name": "DW",
+    "category": ["General"],
+    "relevance_score": 0.51,
+    "latitude": 48.8566,
+    "longitude": 2.3522
+  },
+  {
+    "id": "c2894f22-96g2-58g5-c947-ee32ee9a0f2f",
+    "title": "Elon Musk's Tesla announces new electric vehicle breakthrough",
+    "description": "Tesla has announced a major breakthrough in electric vehicle battery technology that could revolutionize the industry.",
+    "url": "https://www.tesla.com/news",
+    "publication_date": "2025-03-24T10:30:00Z",
+    "source_name": "Tesla",
+    "category": ["Technology", "Business"],
+    "relevance_score": 0.89,
+    "latitude": 37.7749,
+    "longitude": -122.4194
+  },
+  {
+    "id": "d3905g33-07h3-69h6-d058-ff43ff0b1g3g",
+    "title": "Climate change summit in San Francisco draws world leaders",
+    "description": "World leaders gather in San Francisco for critical climate change discussions ahead of COP30.",
+    "url": "https://www.climate-summit.org",
+    "publication_date": "2025-03-24T09:15:00Z",
+    "source_name": "Climate News",
+    "category": ["Environment", "Politics"],
+    "relevance_score": 0.92,
+    "latitude": 37.7749,
+    "longitude": -122.4194
+  },
+  {
+    "id": "e4016h44-18i4-70i7-e169-gg54gg1c2h4h",
+    "title": "New York Times reports on urban development in Manhattan",
+    "description": "Major urban development project announced for downtown Manhattan, expected to create thousands of jobs.",
+    "url": "https://www.nytimes.com/urban-development",
+    "publication_date": "2025-03-24T08:45:00Z",
+    "source_name": "New York Times",
+    "category": ["Business", "Urban Development"],
+    "relevance_score": 0.78,
+    "latitude": 40.7589,
+    "longitude": -73.9851
+  },
+  {
+    "id": "f5127i55-29j5-81j8-f270-hh65hh2d3i5i",
+    "title": "Reuters: Global markets react to Federal Reserve announcement",
+    "description": "Global financial markets show mixed reactions to latest Federal Reserve interest rate decision.",
+    "url": "https://www.reuters.com/markets",
+    "publication_date": "2025-03-24T07:20:00Z",
+    "source_name": "Reuters",
+    "category": ["Finance", "Business"],
+    "relevance_score": 0.85,
+    "latitude": 40.7128,
+    "longitude": -74.0060
+  }
+]
+
